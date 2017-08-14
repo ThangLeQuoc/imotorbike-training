@@ -12,9 +12,12 @@
   </cc:interface>
   
   <cc:implementation>
-    
-    <!-- fields needs to be inside a h:form tag (which is normaly added by the outer page) -->
-    
-    
+    <fieldset>
+    	<legend>Request Number Plate</legend>
+    	<h:inputText readonly="true"></h:inputText>
+    	<h:button value="Generate" action=""></h:button>
+    	<h:commandButton value="Submit"></h:commandButton>
+    	
+    </fieldset>
   </cc:implementation>
 </html>

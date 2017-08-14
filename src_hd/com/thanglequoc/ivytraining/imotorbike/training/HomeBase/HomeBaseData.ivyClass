@@ -1,2 +1,4 @@
 HomeBaseData #class
 com.thanglequoc.ivytraining.imotorbike.training.HomeBase #namespace
+isPolicement Boolean #field
+isPolicement PERSISTENT #fieldModifier

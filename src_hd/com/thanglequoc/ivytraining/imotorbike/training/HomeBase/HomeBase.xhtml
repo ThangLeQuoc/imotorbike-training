@@ -6,11 +6,95 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:pe="http://primefaces.org/ui/extensions"
 	xmlns:pm="http://primefaces.org/mobile">
+<head>
+<title>iMototorBike</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+	integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+	crossorigin="anonymous"></link>
+</head>
+
 <h:body>
 	<ui:insert name="header">
 		<ui:include src="Header.xhtml"></ui:include>
 	</ui:insert>
-	
-	
+	<!-- Form Component -->
+	<h:form>
+		<!-- Personal Information  -->
+		<p:fieldset legend="Personal Information">
+			<!-- Username input field -->
+			<pm:field>
+				<p:outputLabel for="username-txt" value="Fullname(*):" />
+				<p:inputText id="username-txt" />
+			</pm:field>
+			<br />
+			<!-- User Id input field -->
+			<pm:field>
+				<p:outputLabel for="userid-txt" value="ID(*):"></p:outputLabel>
+				<p:inputText id="userid-txt"></p:inputText>
+			</pm:field>
+			<br />
+
+			<!-- 
+				<p:outputLabel for="event" value="Select Event:" />
+				<p:calendar id="event" value="#{calendarView.date4}">
+					<p:ajax event="dateSelect" listener="#{calendarView.onDateSelect}"
+						update="msgs" />
+				</p:calendar>
+				<br/>
+				-->
+
+			<!-- Email input field -->
+			<pm:field>
+				<p:outputLabel for="email-txt" value="Email:"></p:outputLabel>
+				<p:inputText id="email-txt"></p:inputText>
+			</pm:field>
+			<br />
+
+			<!-- Address input field -->
+			<pm:field>
+				<p:outputLabel for="address-txt" value="Address(*):" />
+				<p:inputTextarea id="address-txt" />
+			</pm:field>
+
+		</p:fieldset>
+
+
+		<p:fieldset legend="Motorbike Information">
+
+			<h:selectOneMenu value="">
+				<f:selectItem itemValue="Cream Latte"
+					itemLabel="Coffee3 - Cream Latte" />
+				<f:selectItem itemValue="Extreme Mocha"
+					itemLabel="Coffee3 - Extreme Mocha" />
+				<f:selectItem itemValue="Buena Vista"
+					itemLabel="Coffee3 - Buena Vista" />
+			</h:selectOneMenu>
+
+			<br />
+
+			<!-- Chasis Number input field -->
+			<div class="form-group">
+				<label for="chassisnumber-txt">Chassis Number(*):</label>
+				<h:inputText id="chassisnumber-txt"></h:inputText>
+			</div>
+
+			<!-- Chasis Frame Number input field -->
+			<div class="form-group">
+				<label for="chassis-frame-number-txt">Chassis frame
+					number(*):</label>
+				<h:inputText id="chassis-frame-number-txt"></h:inputText>
+			</div>
+
+			<!-- Vehicle Description  -->
+			<div class="form-group">
+				<label for="comment">Description</label>
+				<textarea class="form-control" id="description-txt"></textarea>
+			</div>
+			<br/>
+		</p:fieldset>
+
+	</h:form>
+
 </h:body>
 </html>
