@@ -1,0 +1,4 @@
+NumberPlateInfomationFormData #class
+com.thanglequoc.ivytraining.imotorbike.training.NumberPlateInfomationForm #namespace
+numberPlateRecord com.thanglequoc.ivytraining.imotorbike.training.NumberPlateRecord #field
+numberPlateRecord PERSISTENT #fieldModifier
