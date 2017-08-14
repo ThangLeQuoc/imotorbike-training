@@ -1,0 +1,35 @@
+NumberPlateRecordEntity #class
+true #isEntity
+com.thanglequoc.ivytraining.imotorbike.training #namespace
+numberplaterecords #dbTableName
+id Integer #field
+id Identifier #fieldComment
+id PERSISTENT #fieldModifier
+id ID #fieldModifier
+id GENERATED #fieldModifier
+name String #field
+name PERSISTENT #fieldModifier
+name 255 #dbFieldLength
+user_id String #field
+user_id PERSISTENT #fieldModifier
+user_id 12 #dbFieldLength
+birthday Date #field
+birthday PERSISTENT #fieldModifier
+email String #field
+email PERSISTENT #fieldModifier
+address String #field
+address PERSISTENT #fieldModifier
+address 255 #dbFieldLength
+motor_type String #field
+motor_type PERSISTENT #fieldModifier
+chassis_number String #field
+chassis_number PERSISTENT #fieldModifier
+chassis_number 17 #dbFieldLength
+chassis_frame_number String #field
+chassis_frame_number PERSISTENT #fieldModifier
+chassis_frame_number 17 #dbFieldLength
+description String #field
+description PERSISTENT #fieldModifier
+description 1000 #dbFieldLength
+number_plate String #field
+number_plate PERSISTENT #fieldModifier

@@ -1,0 +1,20 @@
+NumberPlateRecord #class
+com.thanglequoc.ivytraining.imotorbike.training #namespace
+username String #field
+username PERSISTENT #fieldModifier
+userId String #field
+userId PERSISTENT #fieldModifier
+birthday Date #field
+birthday PERSISTENT #fieldModifier
+email String #field
+email PERSISTENT #fieldModifier
+address String #field
+address PERSISTENT #fieldModifier
+motorbikeType String #field
+motorbikeType PERSISTENT #fieldModifier
+chassisNumber String #field
+chassisNumber PERSISTENT #fieldModifier
+chassisFrameNumber String #field
+chassisFrameNumber PERSISTENT #fieldModifier
+description String #field
+description PERSISTENT #fieldModifier
